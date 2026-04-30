@@ -14,6 +14,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { GrGoogle } from "react-icons/gr";
+import Link from "next/link";
 
 export default function SignInPage() {
   const onSubmit = async (e) => {
@@ -103,7 +104,9 @@ export default function SignInPage() {
             Submit
           </Button>
               </div>
-              
+              <Link href='/signup'>
+                  <p className="text-red-500">Do not have an account? Register here</p>
+              </Link>
           </Form>
 
 
