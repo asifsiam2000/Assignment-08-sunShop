@@ -5,8 +5,8 @@ import { HiOutlineFire, HiOutlineShoppingBag } from 'react-icons/hi';
 
 const Banner = () => {
     return (
-        <div>
-            <section className="relative w-full bg-linear-to-r from-orange-50 via-yellow-50 to-orange-100 py-12 lg:py-20 overflow-hidden">
+        <div className=' my-5'>
+            <section className=" relative w-full bg-linear-to-r from-orange-50 via-yellow-50 to-orange-100 py-12 lg:py-20 overflow-hidden">
   <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     
     {/* Left Content */}
@@ -64,7 +64,7 @@ const Banner = () => {
       
       <div className="relative z-10 hover:scale-105 transition-transform duration-500">
         <Image
-          isBlurred
+        //   isBlurred
                                 width={500}
                                 height={300}
           src="https://images.pexels.com/photos/1545501/pexels-photo-1545501.jpeg?auto=compress&cs=tinysrgb&w=800"
