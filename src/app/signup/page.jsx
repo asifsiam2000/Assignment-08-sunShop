@@ -16,6 +16,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function SignUpPage() {
@@ -38,7 +39,7 @@ export default function SignUpPage() {
       });
       console.log( "Hima , " ,   { data, error });
       if (error) {
-          alert("SignUp Failed");
+          alert("SignUp Failed because your email already exists");
       }
       else {
           alert("SignUp Successfully Your Account");
@@ -117,7 +118,10 @@ export default function SignUpPage() {
             Reset
           </Button>
         </div>
-      </Form>
+          </Form>
+          <Link href='/signin'>
+              <p className="text-blue-500 text-center">Already have an account? Login</p>
+          </Link>
     </Card>
   );
 }
